@@ -1,0 +1,5 @@
+to compile the program with command line type:
+	javac -d bin -sourcepath src src/HIP/myMain.java
+to run the program with command line type:
+	java -cp bin: HIP.myMain
+
