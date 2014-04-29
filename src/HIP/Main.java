@@ -456,18 +456,26 @@ public class Main implements Runnable {
             long now = System.nanoTime();
     	    long fromStart = now - startTime;
     	    fromStart /= 1000000;
-    	    long time = 100000;
-    	    if(       fromStart/10000 == 613 || fromStart/10000 == 614
-    	    		||fromStart/10000 == 683 || fromStart/10000 == 684
-    	    		||fromStart/10000 == 753 || fromStart/10000 == 754
-    	    		||fromStart/10000 == 823 || fromStart/10000 == 824
-    	    		||fromStart/10000 == 893 || fromStart/10000 == 894
-    	    		||fromStart/10000 == 963 || fromStart/10000 == 964){ 
-                accuracy = (double)(acc(allPopSorted[0])/posTot);
-                System.out.println("" + iteration + "- Acc: " + accuracy + " Best Cost: " + allCostSorted[0] + " at length: " + num );
-        	    System.out.println("Time: " + fromStart);
-    	    	//break;
-    	    }    	    
+//    	    long time = 100000;
+    	    
+    	    if(iteration % 10 == 0){
+    	    	accuracy = (double)(acc(allPopSorted[0])/posTot);
+    	    	System.out.println("" + iteration + "- Acc: " + accuracy + " Best Cost: " + allCostSorted[0] + " at length: " + num );
+    	    	System.out.println("Time: " + fromStart);
+    	    }
+    	    
+    	    
+//    	    if(       fromStart/10000 == 613 || fromStart/10000 == 614
+//    	    		||fromStart/10000 == 683 || fromStart/10000 == 684
+//    	    		||fromStart/10000 == 753 || fromStart/10000 == 754
+//    	    		||fromStart/10000 == 823 || fromStart/10000 == 824
+//    	    		||fromStart/10000 == 893 || fromStart/10000 == 894
+//    	    		||fromStart/10000 == 963 || fromStart/10000 == 964){ 
+//                accuracy = (double)(acc(allPopSorted[0])/posTot);
+//                System.out.println("" + iteration + "- Acc: " + accuracy + " Best Cost: " + allCostSorted[0] + " at length: " + num );
+//        	    System.out.println("Time: " + fromStart);
+//    	    	//break;
+//    	    }    	    
             iteration++;            
 //	    	System.out .println("itr: " + iteration + " at accuracy " + accuracy);
         }// End of while

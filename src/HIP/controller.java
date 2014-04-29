@@ -11,7 +11,7 @@ public class controller {
 		public void controller(){
 			System.out.println("*** A Genetic Algorithm Approach ***");
 			addTuples();
-			int num = 1;
+			int num = 2;
 			int exp = 1;
 //			System.out.println("START");
 			for (tuple one : tuples) {	
@@ -59,7 +59,7 @@ public class controller {
 //			tuples.add(new tuple(200, 10, 200, 100000, 0.4, 0.5, global.filename));
 //			tuples.add(new tuple(300, 10, 300, 100000, 0.4, 0.5, global.filename));
 //			tuples.add(new tuple(400, 10, 400, 100000, 0.4, 0.5, global.filename));
-			tuples.add(new tuple(500, 10, 500, 100000, 0.4, 0.5, global.filename));
+			tuples.add(new tuple(5, 10, 5, 100, 0.4, 0.5, global.filename));
 //			tuples.add(new tuple(600, 10, 600, 100000, 0.4, 0.5, global.filename));
 		}
 		public void drive(){
