@@ -457,7 +457,7 @@ public class Main implements Runnable {
     	    long fromStart = now - startTime;
     	    fromStart /= 1000000;
 //    	    long time = 100000;
-    	    
+    	     
     	    if(iteration % 10 == 0){
     	    	accuracy = (double)(acc(allPopSorted[0])/posTot);
     	    	System.out.println("" + iteration + "- Acc: " + accuracy + " Best Cost: " + allCostSorted[0] + " at length: " + num );
